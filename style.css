@@ -285,6 +285,7 @@ a:hover {
   width: 40vw;
   text-align: justify;
 }
+
 #datos-boda a {
   margin: 10px;
 }
@@ -317,7 +318,9 @@ a:hover {
     justify-content: center;
     margin-left: 15px;
   }
-
+  #datos-boda {
+    line-height: 30px;
+  }
   .timeline-container .text {
     padding: 0;
   }
@@ -490,7 +493,11 @@ a:hover {
     background-position: center;
     height: 40vh;
   }
-
+  .hands {
+    background-attachment: fixed;
+    background-position: center;
+    height: 50vh;
+  }
   .stay-container {
     flex-direction: column;
     margin: 10px 0;
