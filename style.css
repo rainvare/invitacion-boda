@@ -494,9 +494,9 @@ a:hover {
     height: 40vh;
   }
   .hands {
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
-    height: 50vh;
+    height: 40vh;
   }
   .stay-container {
     flex-direction: column;
@@ -505,6 +505,14 @@ a:hover {
   .stay-item {
     margin: 2vh 0;
   }
+
+  @media (max-width: 700px) {
+    .hands {
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      height: 40vh;
+    }
 }
 
 /* <===================Gifts===================> */
