@@ -27,6 +27,7 @@ html {
 }
 .hz-margin {
   padding: 0 var(--horizontal-margin-spacing);
+  justify-content: center;
 }
 h1 {
   font-size: var(--h1-size);
@@ -133,10 +134,11 @@ a:hover {
     font-size: 20px;
   }
   nav ul li a {
-    font-size: 10px;
+    font-size: 0.9rem;
   }
   html {
-    font-size: 10px;
+    font-size: 0.9rem;
+    text-align: center;
   }
 }
 @media (max-width: 570px) {
@@ -224,7 +226,7 @@ a:hover {
   top: -30vh;
   width: 100%;
   backdrop-filter: blur(4px);
-  padding: 8vh var(--horizontal-margin-spacing);
+  padding: 3vh var(--horizontal-margin-spacing);
   z-index: 10;
 }
 
@@ -244,7 +246,7 @@ a:hover {
   margin: 30px;
 }
 .timeline-container .text {
-  padding: 1rem 0 1rem 4rem;
+  padding: 0;
 }
 
 @media (max-width: 1000px) {
@@ -285,7 +287,7 @@ a:hover {
 }
 /* <===================Código vestimenta===================> */
 #Codigo-vestimenta {
-  padding-top: 30vh;
+  padding-top: 40vh;
   display: flex;
   flex-direction: row;
   margin: 10vh 0;
@@ -305,10 +307,26 @@ a:hover {
     position: relative;
     top: 0;
   }
-  #Codigo-vestimenta {
-    flex-direction: column;
-    padding-top: 10vh;
+  .Bendicion {
+    flex-wrap: wrap;
   }
+  .Bendicion p {
+    justify-content: center;
+    margin-left: 15px;
+  }
+
+  .timeline-container .text {
+    padding: 0;
+  }
+  .timeline-container .text .huge-btn {
+    padding: 17px;
+  }
+
+  #Codigo-vestimenta {
+    padding-top: 5vh;
+    flex-direction: column;
+  }
+
   #Codigo-vestimenta h3 {
     width: 100%;
     margin: 5px 0;
@@ -428,7 +446,7 @@ a:hover {
 .hands {
   height: 50vh;
   width: 100%;
-  background-image: url("./img/buquet.JPG");
+  background-image: url("./img/rosa.jpg");
   background-size: cover;
   background-position-y: center;
   background-attachment: fixed;
@@ -464,6 +482,12 @@ a:hover {
   text-decoration: underline;
 }
 @media (max-width: 1000px) {
+  .hands2 {
+    background-attachment: scroll;
+    background-position: center;
+    height: 40vh;
+  }
+
   .stay-container {
     flex-direction: column;
     margin: 10px 0;
@@ -523,6 +547,9 @@ a:hover {
   }
   .gifts-container {
     width: 100%;
+  }
+  .gifts-container h3 {
+    font-size: medium;
   }
   #gifts button {
     margin-inline: auto;
