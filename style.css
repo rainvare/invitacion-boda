@@ -285,6 +285,9 @@ a:hover {
   width: 40vw;
   text-align: justify;
 }
+#datos-boda a {
+  margin: 10px;
+}
 /* <===================Código vestimenta===================> */
 #Codigo-vestimenta {
   padding-top: 40vh;
