@@ -90,4 +90,21 @@ const updateCountdown = () => {
 updateCountdown(); // Llama una vez al cargar
 setInterval(updateCountdown, 1000); // Actualiza cada segundo
 
+function enviarPorWhatsapp(event) {
+  event.preventDefault();
+
+  const nombre = document.querySelector('[name="nombre"]').value;
+  const email = document.querySelector('[name="email"]').value;
+  const mensaje = document.querySelector('[name="mensaje"]').value;
+  const asistencia = document.querySelector(
+    '[name="asistencia"]:checked'
+  )?.value;
+
+  const texto = `💌 *Confirmación para la boda de Gabriela e Ismael*\n\n👤 Nombre: ${nombre}\n📧 Email: ${email}\n🎉 Asistencia: ${asistencia}\n💬 Mensaje: ${mensaje}`;
+  const telefono = "5219983029838";
+  const url = `https://wa.me/${telefono}?text=${encodeURIComponent(texto)}`;
+
+  window.open(url, "_blank");
+}
+
 window.addEventListener("scroll", reveal);

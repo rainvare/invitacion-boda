@@ -217,13 +217,7 @@ Después de grandes aventuras, viajes y muchos sueños, estamos listos para escr
           </br></br>
             <div class="text">
               <div class="form-wrapper">
-                <form action="https://formsubmit.co/reynergabriela@hotmail.com" method="POST">
-                  
-                  <input type="hidden" name="_captcha" value="false" />
-                  <input type="hidden" name="_subject" value="Confirmación de asistencia - Boda G&I">
-                  <input type="hidden" name="evento" value="Confirmación para la boda de Gabriela e Ismael">
-                  <input type="hidden" name="_template" value="box">
-
+                <form onsubmit="enviarPorWhatsapp(event)">
                   <div class="form-group">
                     <label>¿ASISTIRÁS A NUESTRA BODA?</label><br />
                     <label>
@@ -235,25 +229,25 @@ Después de grandes aventuras, viajes y muchos sueños, estamos listos para escr
                       ¡No podré asistir, lo siento!
                     </label>
                   </div>
+                
                   <div class="form-group">
                     <label>Nombre:</label>
                     <input type="text" name="nombre" required>
                   </div>
+                
                   <div class="form-group">
                     <label>Email:</label>
                     <input type="email" name="email" required>
                   </div>
+                
                   <div class="form-group">
                     <label>¡Felicita a los novios!:</label>
                     <textarea name="mensaje" rows="4"></textarea>
                   </div>
-
-                  
-
-
-                  <button type="submit">Enviar</button>
                 
+                  <button type="submit">Enviar</button>
                 </form>
+                
               </div>
             </div>
           </div>
