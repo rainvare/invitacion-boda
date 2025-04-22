@@ -131,7 +131,7 @@ a:hover {
 }
 @media (max-width: 1000px) {
   label.logo {
-    font-size: 20px;
+    font-size: 50px;
   }
   nav ul li a {
     font-size: 0.9rem;
